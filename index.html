@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Penta-K Sari-Sari Store | Ecommerce Website</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/Penta-K.png" alt="..." width="60px"></a>
+                </div>
+                <nav>
+                   <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menus/products.html">Products</a></li>
+                        <li><a href="menus/about.html">About Us</a></li>
+                        <li><a href="menus/contact.html">Contact</a></li>
+                        <li><a href="menus/account.html">Account</a></li>
+                   </ul>
+                   
+                   <img src="images/menu.png" alt="..." class="menu-icon" onclick="menutoggle()">
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h2>Your neighborhood's <br> everyday companion.
+                    </h2>
+                    <p>Shop all your necessities and favorites from your neighborhood store. <br> We have a little bit of everything just around the corner.</p>
+                    <a href="menus/products.html" class="btn">Explore Now &#10170;</a>
+                </div>
+    
+                <div class="col-2">
+                    <img src="images/store.png" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- featured products -->
+    <!-- <div class="categories">
+        <div class="small-container">
+            <h2 class="title">Most Purchased Products</h2>
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/princess bea rice.jpg" alt="...">
+                    <h4>Princess Bea 5kls</h4>
+                    <p>&#8369; 245.00</p>
+                </div>
+                <div class="col-3">
+                    <img src="images/red horse 1 liter.jpg" alt="...">
+                    <h4>Red Horse 1 Liter</h4>
+                    <p>&#8369; 110.00</p>
+                </div>
+                <div class="col-3">
+                    <img src="images/pancit canton extra hot.jpg" alt="...">
+                    <h4>Pancit Canton Extra Hot</h4>
+                    <p>&#8369; 14.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+               
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="menus/product-details.html"><img src="images/princess bea rice.jpg" alt="...">
+                <h4>Princess Bea 5kls</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>&#8369; 245.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/red horse 1 liter.jpg" alt="...">
+                <h4>Red Horse 1 Liter</h4>
+                <p>&#8369; 110.00</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="images/pancit canton extra hot.jpg" alt="...">
+                <h4>Pancit Canton Extra Hot</h4>
+                <p>&#8369; 14.00</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="images/pancit canton extra hot.jpg" alt="...">
+                <h4>Pancit Canton Extra Hot</h4>
+                <p>&#8369; 14.00</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+        </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/princess bea rice.jpg" alt="...">
+                    <h4>Princess Bea 5kls</h4>
+                    <p>&#8369; 245.00</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="images/red horse 1 liter.jpg" alt="...">
+                    <h4>Red Horse 1 Liter</h4>
+                    <p>&#8369; 110.00</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="images/pancit canton extra hot.jpg" alt="...">
+                    <h4>Pancit Canton Extra Hot</h4>
+                    <p>&#8369; 14.00</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="images/pancit canton extra hot.jpg" alt="...">
+                    <h4>Pancit Canton Extra Hot</h4>
+                    <p>&#8369; 14.00</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="small-container">
+
+            <h2 class="title">Latest Products</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/princess bea rice.jpg" alt="...">
+                    <h4>Princess Bea 5kls</h4>
+                <p>&#8369; 245.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/red horse 1 liter.jpg" alt="...">
+                    <h4>Red Horse 1 Liter</h4>
+                <p>&#8369; 110.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/pancit canton extra hot.jpg" alt="...">
+                    <h4>Pancit Canton Extra Hot</h4>
+                <p>&#8369; 14.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/pancit canton extra hot.jpg" alt="...">
+                    <h4>Pancit Chilimansi</h4>
+                <p>&#8369; 14.00</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!---------- offer --------->
+        
+    <!-- <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/klmn negosyo.JPG" class="offer-img" alt="...">
+                </div>
+                <div class="col-2">
+                    <p>Special Products Available</p>
+                    <h1>E-Load</h1>
+                    <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    </small>
+                    <a href="" class="btn">Buy Now &#10170;</a>
+                </div>
+            </div>
+        </div>
+    </div>  -->
+
+    <!---------- testimonial --------->
+<!-- 
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatibus deleniti sapiente. </p>
+                    <div  class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <img src="images/klmn negosyo.JPG" alt="...">
+                    <h3>My Beloved Seven</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatibus deleniti sapiente. </p>
+                    <div  class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/klmn negosyo.JPG" alt="...">
+                    <h3>My Beloved Seven</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatibus deleniti sapiente. </p>
+                    <div  class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <img src="images/klmn negosyo.JPG" alt="...">
+                    <h3>My Beloved Seven</h3>
+                </div>
+            </div>
+        </div>
+    </div>  -->
+
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-12">
+                    <img src="images/gatorade_logo.png" alt="...">
+                </div>
+                <div class="col-12">
+                    <img src="images/Unilever_logo.png" alt="...">
+                </div>
+                <div class="col-12">
+                    <img src="images/nestle_logo.png" alt="...">
+                </div>
+                <div class="col-12">
+                    <img src="images/luckyme_logo.png" alt="...">
+                </div>
+                <div class="col-12">
+                    <img src="images/yakult.png" alt="...">
+                </div>
+                <div class="col-12">
+                    <img src="images/pampers_logo.png" alt="...">
+                </div>
+                <div class="col-12">
+                    <img src="images/creamline.png" alt="...">
+                </div>
+                <div class="col-12">
+                    <img src="images/whisper.webp" alt="...">
+                </div>
+                <div class="col-12">
+                    <img src="images/natures_spring_logo.png" alt="...">
+                </div>
+                <div class="col-12">
+                    <img src="images/nescafe.png" alt="...">
+                </div>
+                <div class="col-12">
+                    <img src="images/eden_logo.png" alt="...">
+                </div>
+                <div class="col-12">
+                    <img src="images/mongol_logo.png" alt="...">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-10">
+                    <img src="images/modess.jpg" alt="...">
+                </div>
+                <div class="col-10">
+                    <img src="images/ultrapack_logo.jpg" alt="...">
+                </div>
+                <div class="col-10">
+                    <img src="images/eq_logo.png" alt="...">
+                </div>
+                <div class="col-10">
+                    <img src="images/rebisco_logo.png" alt="...">
+                </div>
+                <div class="col-10">
+                    <img src="images/knorr.png" alt="...">
+                </div>
+                <div class="col-10">
+                    <img src="images/minute maid_logo.png" alt="...">
+                </div>
+                <div class="col-10">
+                    <img src="images/nestea.png" alt="...">
+                </div>
+                <div class="col-10">
+                    <img src="images/faber-castel_logo.png" alt="...">
+                </div>
+                <div class="col-10">
+                    <img src="images/tanduay.png" alt="...">
+                </div>
+                <div class="col-10">
+                    <img src="images/ganador_logo.jpg" alt="...">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12">
+                    <img src="images/holiday_logo.jpg" alt="...">
+                </div>
+                <div class="col-12">
+                    <img src="images/Coca-Cola_logo.png" alt="...">
+                </div>
+                <div class="col-12">
+                    <img src="images/m.y. san_logo.jpg" alt="...">
+                </div>
+                <div class="col-12">
+                    <img src="images/Kopiko.webp" alt="...">
+                </div>
+                <div class="col-12">
+                    <img src="images/unifeeds-logo.png" alt="...">
+                </div>
+                <div class="col-12">
+                    <img src="images/red horse_logo.png" alt="...">
+                </div>
+                <div class="col-12">
+                    <img src="images/silver_swan.png" alt="...">
+                </div>
+                <div class="col-12">
+                    <img src="images/smart.png" alt="...">
+                </div>
+                <div class="col-12">
+                    <img src="images/cobra.png" alt="...">
+                </div>
+                <div class="col-12">
+                    <img src="images/del monte logo.png" alt="...">
+                </div>
+                <div class="col-12">
+                    <img src="images/milo.png" alt="...">
+                </div>
+                <div class="col-12">
+                    <img src="images/san_miguel.png" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-navigation">
+            <a class="navbar-brand" href="#">
+                <img src="images/Penta-K.png" height="50px" alt="...">Go back to top &#x21e7;
+            </a>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <img src="images/store.png" alt="...">
+                    <p>We wanted to provide you all you wanted; save your time and cost.</p>
+                </div>
+
+                <div class="footer-col-3">
+                    <h3>USEFUL LINKS</h3>
+                    <ul>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="menus/products.html">Products</a></li>
+                        <li><a href="menus/contact.html">Contact</a></li>
+                        <li><a href="menus/account.html">Account</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>FOLLOW US</h3>
+                    <ul>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">Tiktok</a></li>
+                        <li><a href="">Youtube</a></li>
+                    </ul>
+                </div>
+                <hr>
+                <p class="copyright">
+                    © Penta-K Sari-Sari Store 2023
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- js for toggle menu -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems")
+
+        MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+               {
+                MenuItems.style.maxHeight = "200px";
+               } 
+            else
+               {
+                MenuItems.style.maxHeight = "0px";
+               } 
+        }
+    </script>
+
+    <script src="login.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
