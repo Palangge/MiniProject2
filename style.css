@@ -656,3 +656,7 @@ form a{
         display: none;
     }
 }
+
+#MenuItems {
+    z-index: 1000;
+}
